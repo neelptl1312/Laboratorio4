@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacto</title>
+    <style>
+        .formulario{
+    display: flex;
+    flex-direction: column;
+}
+.entradas{
+    width: 80%;
+    margin: 2px 0 15px 0;
+}
+input#enviar{
+    width: 30%;
+}
+.caja{
+    border-radius: 10px;
+    border-color: blue;
+}
+div{
+    background-color: forestgreen;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px beige;
+    padding: 10px 10px 10px 10px;
+    margin: 3% 0 0 5%;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Formulario de Contacto</h1>
+        <form action="sent.html" method="get" class="formulario">
+            <label for="nombre" required>Nombre:</label>
+            <input class="entradas caja" type="text" id="nombre" name="user_name" placeholder="Dominic" required>
+            <label for="apellido">Apellido:</label>
+            <input class="entradas caja" type="text" id="apellido" name="user_lastname" placeholder="Toreto" required>
+            <label for="correo">Correo electrónico:</label>
+            <input class="entradas caja" type="email" name="email_address" id="correo" placeholder="DomToreto04@gmail.com" required>
+            <label for="comentario">Comentario:</label>
+            <textarea class="entradas caja"  id="comentario"></textarea>
+            <input class="caja" id="enviar" type="submit">
+        </form>
+    </div>
+    
+</body>
+</html>

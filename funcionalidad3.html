@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de nosotros</title>
+    <style>
+        body {
+        background-color: #71E069;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        }
+
+        h1 {
+            color: #523DE0;
+            text-align: center;
+        }
+
+        .member {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        background-color: #E08D53;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .member img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 20px;
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .member:hover img {
+        transform: scale(1.1);
+        }
+
+        .member-info {
+        flex-grow: 1;
+        color: black;
+        }
+
+        .member-info h2, .member-info p {
+        text-align: justify;
+        }
+
+        .member-info h2 {
+        margin: 0 0 10px 0;
+        }
+
+        .member-info p:last-child {
+        margin-bottom: 0;
+        }
+
+        .carousel-container {
+      position: relative;
+      width: 800px;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    .carousel-slides {
+      display: flex;
+      width: 300%;
+      height: 100%;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .carousel-slide {
+      flex-shrink: 0;
+      width: 33.33%;
+      height: 100%;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carousel-navigation {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      z-index: 1;
+    }
+
+    .carousel-button {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <h1>Acerca de nosotros</h1>
+
+    <div class="member">
+        <img src="https://phantom-marca.unidadeditorial.es/663af5cdabe1fae476c3ab9dadd601e0/resize/1320/f/jpg/assets/multimedia/imagenes/2022/12/09/16706029389085.jpg" alt="Foto de Samuel">
+        <div class="member-info">
+            <h2>Samuel Castro</h2>
+            <p>Desarrollador principal</p>
+            <p>Samuel es un apasionado del desarrollo web y tiene experiencia en diversos lenguajes de programación.</p>
+        </div>
+    </div>
+
+    <div class="member">
+        <img src="https://sm.ign.com/ign_es/news/s/seth-rogen/seth-rogen-would-be-excited-to-voice-donkey-kong-again-after_69w3.jpg" alt="Foto de Juan">
+        <div class="member-info">
+            <h2>Juan Cortés</h2>
+            <p>Desarrollador junior</p>
+            <p>Juan es un principiante pero le encanta programar sitios web.</p>
+        </div>
+    </div>
+
+    <div class="member">
+        <img src="https://i1.sndcdn.com/artworks-pQZ9bp64e9Wm7SDh-LuIarQ-t500x500.jpg" alt="Foto de Neel">
+        <div class="member-info">
+            <h2>Neel Patel</h2>
+            <p>Desarrollador senior master 4k Ulra HD 100% no fake</p>
+            <p>Neel siente que la programación le corre por las venas y ha nacido para programar, conoce múltiples lenguajes de programación y tiene una basta experiencia.</p>
+        </div>
+    </div>
+</body>
+</html>

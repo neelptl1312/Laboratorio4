@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Digital</title>
+    <style>
+        body {
+            background-color: #b0ffff;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .content {
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content img {
+            width: 60%;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">
+        Portafolio Digital
+    </h1>
+
+    <div class="content">
+        <select name="" id="select" onchange="window.location.href=this.value;">
+            <option value="">Seleccione un miembro</option>
+            <option value="./juan.html">Juan Cortés</option>
+            <option value="./neel.html">Neel Patel</option>
+            <option value="./samuel.html">Samuel Castro</option>
+        </select>
+        <img src="https://miportafoliodigital.com/wp-content/uploads/2021/03/navegador-de-examen-seguro.png" alt="">
+    </div>
+</body>
+</html>
